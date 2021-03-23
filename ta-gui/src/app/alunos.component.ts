@@ -30,6 +30,10 @@ import { AlunoService } from './aluno.service';
               );
     } 
 
+    deletarAluno(a:Aluno):void{
+      this.alunoService.deletar(this.aluno).subscribe();
+    }
+
     onMove(): void {
        this.cpfduplicado = false;
     }

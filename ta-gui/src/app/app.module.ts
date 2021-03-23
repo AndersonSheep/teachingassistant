@@ -22,15 +22,15 @@ import { AlunoService } from './aluno.service';
     FormsModule,
     HttpClientModule, 
     RouterModule.forRoot([
-      {
+    {
         path: 'metas',
         component: MetasComponent
-      },
-      {
+    },
+    {
         path: 'alunos',
         component: AlunosComponent
-      }
-    ])
+    }
+], { relativeLinkResolution: 'legacy' })
   ],
   providers: [AlunoService],
   bootstrap: [AppComponent]
